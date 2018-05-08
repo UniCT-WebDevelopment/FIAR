@@ -1,0 +1,295 @@
+/***************************
+Generals
+***************************/
+
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url("/assets/img/bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@font-face {
+	font-family: nulshockFont;
+	src: url(./fonts/earthorbiterexpand.ttf);
+}
+
+.custom-font {
+	font-family: nulshockFont;
+}
+
+.non-select {
+	-webkit-user-select: none;
+	/* Chrome all / Safari all */
+	-moz-user-select: none;
+	/* Firefox all */
+	-ms-user-select: none;
+	/* IE 10+ */
+	user-select: none;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+.main-screen {
+	display: none;
+}
+
+.btn.btn-default {
+	margin: 12px;
+	padding: 16px;
+	color: #fff;
+	background: #5e259e;
+	border: 1px solid purple;
+	border-radius: 0px;
+	transition: all 500ms ease;
+}
+
+.btn.btn-default:hover {
+	color: #5e259e;
+	background: #fff;
+	transform: skew(-10deg);
+}
+
+.red {
+	color: #c84d85;
+}
+
+.white {
+	color: #a7b3b6;
+}
+
+/***************************
+Radio-Button
+***************************/
+
+.rooms {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-left: 20%;
+}
+
+.inputContainer {
+	display: block;
+	position: relative;
+	width: 70%;
+	padding-left: 35px;
+	padding-right: 35px;
+	text-align: start;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 16px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	transition: all 500ms ease;
+}
+
+/* Hide the browser's default radio button */
+
+.inputContainer input {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	opacity: 0;
+	cursor: pointer;
+}
+
+/* Create a custom radio button */
+
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 2px;
+	background-color: #45364b;
+}
+
+/* On mouse-over, add a grey background color */
+
+.inputContainer:hover {
+	color: #a7b3b6;
+	transform: skew(-10deg);
+	padding-left: 5%;
+}
+
+/* On mouse-over, add a grey background color */
+
+.inputContainer:hover input ~ .checkmark {
+	background-color: rgb(107, 107, 107);
+}
+
+/* When the radio button is checked, add a pink background */
+
+.inputContainer input:checked ~ .checkmark {
+	background-color: #f84093;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the indicator (dot/circle) when checked 
+.inputContainer input:checked ~ .checkmark:after {
+    display: block;
+}
+
+ //Style the indicator (dot/circle) 
+.inputContainer .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: white;
+}
+*/
+
+/***************************
+Login-Screen
+***************************/
+
+.container-login {
+	width: 80%;
+	position: absolute;
+	top: 19px;
+	margin: auto;
+	padding: 32px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	background: #fff;
+	border: 3px solid #2a1b3d;
+	box-shadow: 0px 0px 8px 2px rgba(41, 26, 60, 0.302);
+	-moz-box-shadow: 0px 0px 8px 2px rgba(41, 26, 60, 0.302);
+	-webkit-box-shadow: 0px 0px 8px 2px rgba(42, 27, 61, 0.3);
+}
+
+.container-login h1 {
+	margin: 20px;
+	color: #6f2fa3;
+	font-size: 36px;
+}
+
+.container-login .nickname-input {
+	padding: 4px;
+}
+
+/***************************
+Game-Screen
+***************************/
+
+.game-screen {
+	display: none;
+	padding: 30px;
+	text-align: center;
+}
+
+.game-screen .winner {
+	display: none;
+	position: absolute;
+	width: 300px;
+	height: 150px;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	padding: 30px;
+	background: rgba(164, 179, 182, 0.6);
+	box-shadow: 0px 0px 12px 6px rgba(177, 237, 232, 0.7);
+	-moz-box-shadow: 0px 0px 12px 6px rgba(177, 237, 232, 0.7);
+	-webkit-box-shadow: 0px 0px 12px 6px rgba(177, 237, 232, 0.7);
+	border-radius: 10px;
+	text-align: center;
+	z-index: 1;
+}
+
+.game-screen .winner .winner-text {
+	margin-top: 15px;
+	font-size: 18px;
+	font-weight: bold;
+	color: rgb(42, 27, 61);
+}
+
+.game-screen .info {
+	display: block;
+	float: right;
+	margin: 2px;
+	padding: 12px;
+	border: 3px solid #ffb8d9;
+	width: 200px;
+}
+
+#defaultCanvas0 {
+	display: none;
+	box-shadow: 0px 0px 12px 6px rgba(255, 89, 231, 0.702);
+	-moz-box-shadow: 0px 0px 12px 6px rgba(255, 89, 231, 0.7);
+	-webkit-box-shadow: 0px 0px 12px 6px rgba(255, 89, 231, 0.7);
+}
+
+#exit {
+	float: left;
+	margin: 2px;
+	padding: 10px;
+	color: #5e259e;
+	background: #fff;
+	border: 1px solid purple;
+}
+
+#exit:hover {
+	color: #fff;
+	background: #6337ca;
+	border: 1px solid #5e259e;
+}
+
+/***************************
+Media Queries
+***************************/
+
+@media only screen and (max-width: 1024px) {
+	body {
+		background-size: auto;
+	}
+	.container-login .nickname-input {
+		width: 200px;
+	}
+	.game-screen .info {
+		border: 2px solid #ffb8d9;
+	}
+	.game-screen .info h3,
+	.game-screen .info h4 {
+		display: inline-block;
+		font-size: 14px;
+	}
+	#defaultCanvas0 {
+		margin-top: 80px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.game-screen .info {
+		float: right;
+	}
+	.game-screen .info h3,
+	.game-screen .info h4 {
+		font-size: 12px;
+	}
+	#defaultCanvas0 {
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (max-width: 409px) {
+	.game-screen .info {
+		float: right;
+	}
+}

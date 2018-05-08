@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>F i a r</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div class="container-fluid custom-font non-select">
+
+        <!-- Login-Screen -->
+        <div id="login-screen" class="login-screen active">
+
+            <div class="row container-login">
+                <h1>F i a r</h1>
+                <input id="input-login" class="nickname-input" type="text" name="nickname" placeholder="Nickname..." />
+                <button id="btn-login" class=" btn btn-default">Login</button>
+            </div>
+
+        </div>
+        <!-- End Login-Screen -->
+
+        <!-- Main-Screen -->
+        <div id="main-screen" class="main-screen active">
+
+            <div class="row container-login">
+                <h1>F i a r</h1>
+                <div id="rooms" class="rooms">
+                    <!-- Rooms here -->
+                </div>
+                <button id="btn-create" class=" btn btn-default">Create new Room</button>
+                <button id="btn-join" class=" btn btn-default">Join a Room</button>
+            </div>
+
+        </div>
+        <!-- End Main-Screen -->
+
+        <!-- Game-Screen -->
+        <div id="game-screen" class="game-screen ">
+            <!-- Canvas here -->
+            <div id="winner" class="winner"></div>
+            <div id="info" class="info"></div>
+            <button id="exit" class=" btn btn-default">Exit</button>
+        </div>
+        <!-- End Game-Screen -->
+
+    </div>
+
+
+    <!-- Libs -->
+    <script src="assets/js/libs/processing/p5.min.js"></script>
+    <script src="assets/js/libs/processing/p5.dom.js"></script>
+    <script src="assets/plugins/jquery/jquery-3.2.1.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/socket_io/socket_io.js"></script>
+
+    <!-- Code -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/sketch.js"></script>
+    <script src="assets/js/gameSettings.js"></script>
+    <script src="assets/js/Grid.js"></script>
+
+</body>
+
+</html>
