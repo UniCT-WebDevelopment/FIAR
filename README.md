@@ -36,15 +36,20 @@ FIAR is a single-page application and it uses a number of open source projects t
 ## Installation
 
 FIAR requires [Node.js](https://nodejs.org/) v8.9+ to run.
+Once you have Node.js installed, go inside FIAR folder and init the project.
+
+```sh
+$ cd FIAR
+$ npm init
+```
 
 Note by default server listens in localhost on port 3000. So before running it,
 you can change port number both in the server and on the client (Sketch.js), 
 changing host, too.
 
-Install the dependencies (Express and SocketIO modules) and start the server.
+Install the dependencies (Express and SocketIO modules) and run the server.
 
 ```sh
-$ cd FIAR
 $ npm install express socket.io --save
 $ node server.js
 ```
