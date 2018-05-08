@@ -45,7 +45,7 @@ Install the dependencies (Express and SocketIO modules) and run the server.
 
 ```sh
 $ cd FIAR
-$ npm install express socket.io --save
+$ npm install
 $ node server.js
 ```
 
