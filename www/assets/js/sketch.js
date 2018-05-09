@@ -4,7 +4,7 @@ Sketch
 
 var socket;
 var host = 'http://127.0.0.1';
-var port = 8080;
+var port = 3000;
 
 var cnv;
 var grid;
