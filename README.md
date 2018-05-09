@@ -37,7 +37,7 @@ FIAR is a single-page application and it uses a number of open source projects t
 
 FIAR requires [Node.js](https://nodejs.org/) v8.9+ to run.
 
-Note by default server listens in localhost on port 3000. So before running it,
+Note by default server listens in localhost on port 8080. So before running it,
 you can change port number both in the server and on the client (Sketch.js), 
 changing host, too.
 
