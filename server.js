@@ -6,7 +6,7 @@ var express = require('express');
 var app = express();
 var web_server = require('http').createServer(app);
 var web_socket = require('socket.io')(web_server);
-var port = 3000;
+var port = 8080;
 app.use('/', express.static(__dirname + '/www'));
 
 var roomNo = 1;
