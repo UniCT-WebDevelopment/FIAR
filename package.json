@@ -2,9 +2,9 @@
   "name": "FIAR",
   "version": "1.0.0",
   "description": "Multiplayer Game",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "author": "Mario Raciti & Gioele Cageggi",
   "license": "ISC",
