@@ -71,7 +71,7 @@ Project has been developed by [Mario Raciti] and [Gioele Cageggi], Computer Scie
  - Emails: mraciti96@gmail.com - gcageggi@gmail.com
  - LinkedIn: linkedin.com/in/marioraciti - linkedin.com/in/gioele-cageggi
  - Facebook: facebook.com/MarioRacitiDev - facebook.com/gioele.cageggi
- - Twitter: twitter.com/mraciti_dev - twitter.com/mrJoelC_dev
+ - Twitter: twitter.com/zMrDevJ - twitter.com/mrJoelC_dev
 
 ## Todos
 
